@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FDFDFD" /> <!-- Ganti dengan warna latar yang diinginkan -->
+    <corners android:radius="50dp" /> <!-- Sesuaikan radius sudut untuk membentuk bentuk tabung -->
+</shape>

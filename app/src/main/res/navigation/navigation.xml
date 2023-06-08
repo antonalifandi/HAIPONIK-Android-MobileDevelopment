@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation">
+
+
+    <fragment
+        android:id="@+id/navi_home"
+        android:name="com.example.myapp.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/navi_whatsapp"
+        android:name="com.example.myapp.fragment.WhatsappFragment"
+        android:label="Whatsapp"
+        tools:layout="@layout/fragment_whatsapp"/>
+
+    <fragment
+        android:id="@+id/navi_profile"
+        android:name="com.example.myapp.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/navi_about"
+        android:name="com.example.myapp.fragment.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about"/>
+
+</navigation>

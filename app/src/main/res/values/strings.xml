@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HAIPONIK</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="Home">Home</string>
+    <string name="WhatsApp">Whatsapp</string>
+    <string name="Profile">profile</string>
+    <string name="About">About</string>
+    <string name="paragraph_text">1. Siapkan alat dan bahan yaitu bibit tomat, rockwool, netpot, nutrisi AB Mix, bak nutrisi, kain flanel/pipa.
+
+2. Pertama melakukan pemilihan bibit unggul dengan merendam benih/bibit tomat yang telah kering tersebut selama 15-20 menit. Kemudian, terdapat bibit yang mengapung dan ada pula yang terendam. Bibit yang baik adalah yang terendam sementara yang terapung sebaiknya tidak digunakan.
+
+3. Selanjutnya tahap penyemaian bibit, Siapkan rockwool yang sudah dipotong, Lubangi masing-masing rockwool dengan tusuk gigi untuk memasukkan bibit nantinya. Taruh rockwool tersebut pada tray semai atau nampan. Masukkan bibit pada lubang yang telah dibuat. Siram rockwool dengan air biasa (air tanah) hingga basah. Tutup tray semai dengan plastic hitam supaya cahaya tidak masuk dan simpan di tempat yang gelap selama 2×24 jam.
+
+4. Kemudian, setelah 2 hari akan terlihat proses pertumbuhan kecambah. Pada proses ini pindahkan tray semai ke tempat yang ada sinar matahari. Proses ini hingga 21-28 hari.
+
+5. Tahap pemindahan ke sistem hidroponik. Setelah tunas sejati muncul (daunnya sudah lebih dari 2) maka bibit dari proses penyemaian siap dipindahkan pada sistem hidroponik. Sistem hidroponik yang biasanya digunakan untuk tomat, seperti deep flow system (DFT) atau drip system.
+
+6. Untuk proses pemindahannya yaitu, Pisahkan rockwool dengan rockwool lainnya. Taruh i rockwool pada sistem hidroponik dengan bantalan kerikil, arang, atau bisa pula menggunakan netpot. Untuk perhitungan kadar nutrisi AB mix untuk tomat sebelum berbunga sekitar 1300 ppm.
+
+7. Setelah tanaman tomat cukup tinggi, Anda bisa memberi penopang (misalnya, tali) agar tumbuhnya tetap tegak atau patah. Disaat tomat telah berbunga tingkatkan ppm air nutrisi menjadi 2000 ppm. Hal ini supaya nutrisi untuk buahnya lebih optimal.
+
+8. Perawatan lebih ditingkatkan pada saat tanaman tomat telah berbuah dan sebaiknya potong ranting tanaman yang tidak berbuah. Hal ini supaya konsentrasi nutrisi tertuju lebih pada buah. TIngkatkan ppm air nutrisi sekitar 3600 ppm.
+
+9. Masa Panen Berkisar hingga 80-90 hari tomat hidroponik mulai berbuah warna merah. Hal ini menandakan tomat siap untuk dipanen.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
