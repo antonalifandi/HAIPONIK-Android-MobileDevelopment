@@ -23,6 +23,19 @@
 
 9. Masa Panen Berkisar hingga 80-90 hari tomat hidroponik mulai berbuah warna merah. Hal ini menandakan tomat siap untuk dipanen.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="paragraph1">Aplikasi ini dibuat untuk membantu orang-orang bercocok tanam di rumah dengan metode sistem hidroponik sebagai media tanamnya, masyarakat tidak perlu lagi mencari panduan di buku. Aplikasi ini merupakan tugas akhir yang dibuat oleh pengembang dalam rangka memenuhi salah satu syarat untuk mencapai gelar sarjana.</string>
+
+    <string name="paragraph2">Perlu diketahui Isi dari fungsi dan panduan dalam bercocok tanam didapatkan oleh pengembang melalui riset jurnal ilmiah, buku, serta laman di internet dan tidak 100% akurat, Pengembang berusaha semaksimal mungkin dalam memberikan informasi.</string>
+
+    <string name="paragraph_disclaimer1">Semua material yang berada dalam bentuk gambar, illustrasi dimiliki oleh para pemiliknya yang pengembang hormati. Pengembang tidak mengklaim gambar, illustrasi mereka sebagai milik pengembang. Gambar, Illustrasi yang digunakan dalam penjelasan adalah sebatas visualisasi.</string>
+
+    <string name="paragraph_disclaimer2">Dengan menggunakan aplikasi ini Pengguna dinyatakan setuju dan bertanggung jawab atas tindakan dan data apapun dalam apa yang dimasukan, diunggah dalam layanan komunitas.</string>
+
+    <string name="paragraph_disclaimer3">Setiap gambar dan atau tulisan yang diunggah oleh Pengguna harus mematuhi peraturan dan perundang undangan yang berlaku termasuk diantaranya:</string>
+
+    <string name="disclaimer_sub"> </string>
+
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
