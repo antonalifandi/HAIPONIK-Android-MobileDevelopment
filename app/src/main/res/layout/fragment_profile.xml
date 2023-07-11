@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cdc_save"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cdc_save"
@@ -66,10 +66,10 @@
 
         <Button
             android:id="@+id/btnSave"
-            android:layout_width="85dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardElevation="30dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="45dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/edit"
             android:gravity="center"
@@ -78,8 +78,8 @@
 
         <Button
             android:id="@+id/btnLogout"
-            android:layout_width="85dp"
-            android:layout_height="38dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardElevation="30dp"
             android:background="@drawable/edit"
             android:gravity="center"

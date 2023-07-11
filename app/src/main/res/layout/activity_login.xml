@@ -16,7 +16,6 @@
             android:layout_height="280dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:backgroundTint="#FFFFFF"
             android:scaleType="centerCrop"
             android:src="@drawable/login" />
         <TextView
@@ -24,7 +23,6 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="8pt"
             android:text="LOGIN SEKARANG "/>
         <com.google.android.material.textfield.TextInputLayout
@@ -38,7 +36,6 @@
                 android:layout_height="wrap_content"
                 android:hint="Alamat Email"
                 app:cardElevation="300dp"
-                android:background="@color/ecolor"
                 android:inputType="textEmailAddress"
                 tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -53,9 +50,8 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Kata sandi"
+                android:hint="Kata Sandi"
                 app:cardElevation="30dp"
-                android:background="@color/ecolor"
                 android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -65,7 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textAllCaps="false"
-            android:backgroundTint="#00EDED"
             android:background="@drawable/edit"
             android:text="Masuk"/>
         <Button
@@ -74,7 +69,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/black"
-            android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/edit"
             android:text="Masuk dengan Google"/>
@@ -82,7 +76,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Apakah Anda belum memiliki akun?"
-            android:textColor="@color/black"
             android:textAlignment="center"
             android:layout_marginTop="25dp"/>
         <Button
@@ -91,9 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textAllCaps="false"
-            android:textColor="@color/white"
             android:background="@drawable/edit"
-            android:text="Register"/>
+            android:text="Registerasi"/>
 
     </LinearLayout>
 </ScrollView>

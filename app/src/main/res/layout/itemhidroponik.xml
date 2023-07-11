@@ -44,7 +44,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Tomat Hidroponik"
-                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +64,6 @@
             android:padding="8dp"
             android:text="@string/paragraph_text"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />

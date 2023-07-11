@@ -12,23 +12,22 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
 
 class RegisterActivity : AppCompatActivity() {
-    lateinit var editFullName: EditText
-    lateinit var editEmail: EditText
-    lateinit var editPassword: EditText
-    lateinit var editPasswordConf: EditText
-    lateinit var buttonRegister: Button
-    lateinit var buttonLogin: Button
-    lateinit var progressDialog: ProgressDialog
-
-    var firebaseAuth = FirebaseAuth.getInstance()
-
+    private lateinit var editFullName: EditText
+    private lateinit var editEmail: EditText
+    private lateinit var editPassword: EditText
+    private lateinit var editPasswordConf: EditText
+    private lateinit var buttonRegister: Button
+    private lateinit var buttonLogin: Button
+    private lateinit var progressDialog: ProgressDialog
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onStart() {
         super.onStart()
-        if (firebaseAuth.currentUser!=null){
-            startActivity(Intent(this, MainActivity::class.java))
+        if (firebaseAuth.currentUser != null) {
+            firebaseAuth.signOut()
         }
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -45,56 +44,63 @@ class RegisterActivity : AppCompatActivity() {
         progressDialog.setTitle("Logging")
         progressDialog.setMessage("Silahkan tunggu...")
 
-        buttonLogin.setOnClickListener{
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        buttonLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
-        buttonRegister.setOnClickListener{
-            if(editFullName.text.isNotEmpty() && editEmail.text.isNotEmpty() && editPassword.text.isNotEmpty()){
+        buttonRegister.setOnClickListener {
+            if (editFullName.text.isNotEmpty() && editEmail.text.isNotEmpty() && editPassword.text.isNotEmpty()) {
                 if (editPassword.text.toString() == editPasswordConf.text.toString()) {
                     // LAUNCH REGISTER
-                    proscessRegister()
-                }else {
+                    processRegister()
+                } else {
                     Toast.makeText(this, "Konfirmasi kata sandi harus sama!", LENGTH_SHORT).show()
                 }
-            }else{
+            } else {
                 Toast.makeText(this, "Silahkan isi semua data", LENGTH_SHORT).show()
             }
         }
     }
 
-    private fun proscessRegister(){
+    private fun processRegister() {
         val fullName = editFullName.text.toString()
         val email = editEmail.text.toString()
         val password = editPassword.text.toString()
 
         progressDialog.show()
         firebaseAuth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener{ task ->
+            .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val userUpdateProfile = userProfileChangeRequest {
                         displayName = fullName
                     }
 
-                    val user = task.result.user
-                    user!!.updateProfile(userUpdateProfile)
-                        .addOnCompleteListener {
+                    val user = firebaseAuth.currentUser
+                    user?.updateProfile(userUpdateProfile)
+                        ?.addOnCompleteListener {
                             progressDialog.dismiss()
-                            startActivity(Intent(this, MainActivity::class.java))
+                            Toast.makeText(
+                                this,
+                                "Registrasi berhasil! Data disimpan.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            startActivity(Intent(this, LoginActivity::class.java))
+                            finish()
                         }
-                        .addOnFailureListener{ error2 ->
-                            Toast.makeText(this, error2.localizedMessage, LENGTH_SHORT).show()
-
+                        ?.addOnFailureListener { error2 ->
+                            progressDialog.dismiss()
+                            Toast.makeText(this, error2.localizedMessage, Toast.LENGTH_SHORT).show()
                         }
-                }else{
+                } else {
                     progressDialog.dismiss()
+                    Toast.makeText(this, "Registrasi gagal.", Toast.LENGTH_SHORT).show()
                 }
             }
-            .addOnFailureListener{ error ->
-                            Toast.makeText(this, error.localizedMessage, LENGTH_SHORT).show()
-
-
+            .addOnFailureListener { error ->
+                progressDialog.dismiss()
+                Toast.makeText(this, error.localizedMessage, Toast.LENGTH_SHORT).show()
             }
-
     }
 }

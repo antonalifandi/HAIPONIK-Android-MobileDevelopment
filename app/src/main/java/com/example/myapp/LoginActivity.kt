@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
             if(editEmail.text.isNotEmpty() && editPassword.text.isNotEmpty()){
                 proseslogin()
             }else{
-                Toast.makeText(this, "Silahkan isi email dan password terlebih dahulu", LENGTH_SHORT).show()
+                Toast.makeText(this, "Silahkan isi Alamat email dan Kata Sandi terlebih dahulu", LENGTH_SHORT).show()
             }
         }
         buttonGoogle.setOnClickListener{
